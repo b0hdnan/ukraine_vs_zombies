@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-image: url(./level_01/illustration-apocalyptique-lave-batiments-ville-abandonnes-pleine-lune_343801-1809.avif);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+}
+.container{
+	width: 1500px;
+	margin: 0 auto;
+	height: 100vh;
+}
+.battle{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+.fire{
+	position: absolute;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	width: 100%;
+	height: 100vh;
+}
+.bomb{
+	display: none;
+}
+.zombie{
+	width: 300px;
+}
+label{
+	display: block;
+	font-size: 2rem;
+}
+input{
+	display: block;
+	font-size: 2rem;
+	width: 420px;
+}
+.text-box{
+	flex-direction: column;
+	position: absolute;
+	left: 100px;
+	top: 100px;
+	justify-content: center;
+	font-size: 32px;
+	position: absolute;
+	z-index: 1;
+	text-shadow: 2px 2px 5px rgb(255, 0, 17),
+	-1px -2px 5px rgb(255, 234, 0);
+	animation: pulse;
+  animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.button{
+	padding: 15px;
+	background: #000;
+	border-radius: 15px;
+	align-self: center;
+	color: white;
+	cursor: pointer;
+	margin: 20px;
+	width: 300px;
+}
+.exit{
+	padding: 15px;
+	background: #20e206;
+	border-radius: 15px;
+	align-self: center;
+	color: white;
+	cursor: pointer;
+	margin: 20px;
+	width: 300px;
+	display: none;
+}
